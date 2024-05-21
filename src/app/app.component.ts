@@ -17,6 +17,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     const perm = ["ADMIN", "EDITOR"];
     this.permissionsService.loadPermissions(perm);
+
     // this.http.get('url').subscribe((permissions) => {
     //   //const perm = ["ADMIN", "EDITOR"]; example of permissions
     //   this.permissionsService.loadPermissions(permissions);
