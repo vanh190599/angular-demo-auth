@@ -1,0 +1,13 @@
+<div class="container">
+  <br>
+  User login:
+  <button class="btn btn-primary" (click)="switchUser('user_1')">User 1</button>
+  <button class="btn btn-primary" (click)="switchUser('user_2')">User 2</button>
+  <hr>
+  <h4>show name: {{ user_name }}</h4>
+  <button *ngxPermissionsOnly="['import']" class="btn btn-lg btn-primary">import</button>
+  <button *ngxPermissionsOnly="['add_user']" class="btn btn-lg btn-danger">add user</button>
+  <button *ngxPermissionsOnly="['export']" class="btn btn-lg btn-secondary">export</button>
+  <button *ngxPermissionsOnly="['edit']" class="btn btn-lg btn-warning">edit</button>
+  <hr>
+</div>
