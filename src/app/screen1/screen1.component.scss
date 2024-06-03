@@ -1,0 +1,43 @@
+p-table {
+  th, td {
+    white-space: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  th {
+    background: #FAFAFA;
+  }
+}
+
+:host ::ng-deep {
+  .p-datatable {
+    border: 1px solid #f3f2f1
+  }
+
+  p-tableradiobutton {
+    //vertical-align: super;
+  }
+
+  .p-datatable-wrapper {
+    &::-webkit-scrollbar-track {
+      background-color: #FFFFFF;
+      //margin-left: 2px;
+      //margin-right: 2px;
+    }
+
+    &::-webkit-scrollbar {
+      height: 10px;
+      width: 10px;
+      background-color: #FFFFFF;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      opacity: 0.7;
+      background: #dddddd;
+    }
+  }
+}
+
+

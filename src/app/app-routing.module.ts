@@ -5,8 +5,18 @@ import {AboutComponent} from "./about/about.component";
 import {TestUiComponent} from "./test-ui/test-ui.component";
 import {NgxPermissionsGuard} from "ngx-permissions";
 import {ForbiddenComponent} from "./forbidden/forbidden.component";
+import {Screen1Component} from "./screen1/screen1.component";
+import {Screen2Component} from "./screen2/screen2.component";
 
 const routes: Routes = [
+  {
+    path: 'screen1',
+    component: Screen1Component,
+  },
+  {
+    path: 'screen2',
+    component: Screen2Component,
+  },
   {
     path: 'home',
     component: HomeComponent
