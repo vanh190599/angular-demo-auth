@@ -11,11 +11,18 @@ import {HttpClient} from "@angular/common/http";
 export class AppComponent implements OnInit {
   title = 'auth-demo';
 
+  date1: Date | undefined;
+
+  date2: Date | undefined;
+
+  date3: Date | undefined;
+
   constructor(private permissionsService: NgxPermissionsService) {
   }
 
   ngOnInit(): void {
-    const perm = ["ADMIN", "EDITOR"];
+    const perm = ["ADMIN1", "EDITOR"];
+
     this.permissionsService.loadPermissions(perm);
 
     // this.http.get('url').subscribe((permissions) => {
