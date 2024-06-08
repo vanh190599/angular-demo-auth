@@ -22,7 +22,7 @@ export class AppMenuComponent implements OnInit {
         ]
       },
       {
-        label: 'Hierarchy',
+        label: 'Căn cước công dân',
         items: [
           {
             label: 'Submenu 1', icon: 'pi pi-fw pi-bookmark',

@@ -1,0 +1,34 @@
+.layout-topbar {
+  background: var(--Branding, linear-gradient(90deg, #005993 36.46%, #EA114E 96.25%));
+  height: 57px;
+
+  .layout-topbar-logo {
+    span {
+      color: white;
+      padding-left: 20px;
+      margin-left: 20px;
+      font-size: 21px;
+      margin-top: 12px;
+      font-weight: normal;
+
+      &:before {
+        content: "";
+        height: 15px;
+        border-left: 1px solid rgba(255, 255, 255, 0.50);
+        padding-right: 20px;
+      }
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+
+  .layout-menu-button i {
+    color: #c5c5c5 !important;
+    margin-top: 3px;
+  }
+
+}
+

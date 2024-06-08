@@ -18,6 +18,8 @@ import {TagModule} from "primeng/tag";
 import {CheckboxModule} from "primeng/checkbox";
 import {CommonModule} from "@angular/common";
 import {AppLayoutModule} from "./layout/app.layout.module";
+import { DashboardComponent } from './dashboard/dashboard.component';
+import {Ripple} from "primeng/ripple";
 
 
 @NgModule({
@@ -29,20 +31,22 @@ import {AppLayoutModule} from "./layout/app.layout.module";
     ForbiddenComponent,
     Screen1Component,
     Screen2Component,
+    DashboardComponent,
   ],
-  imports: [
-    CommonModule,
-    BrowserModule,
-    AppRoutingModule,
-    NgxPermissionsModule.forRoot(),
-    Button,
-    CalendarModule,
-    FormsModule,
-    TableModule,
-    TagModule,
-    CheckboxModule,
-    AppLayoutModule,
-  ],
+    imports: [
+        CommonModule,
+        BrowserModule,
+        AppRoutingModule,
+        NgxPermissionsModule.forRoot(),
+        Button,
+        CalendarModule,
+        FormsModule,
+        TableModule,
+        TagModule,
+        CheckboxModule,
+        AppLayoutModule,
+        Ripple,
+    ],
   providers: [
   ],
   bootstrap: [AppComponent]
