@@ -16,6 +16,8 @@ import { Screen2Component } from './screen2/screen2.component';
 import {TableModule} from "primeng/table";
 import {TagModule} from "primeng/tag";
 import {CheckboxModule} from "primeng/checkbox";
+import {CommonModule} from "@angular/common";
+import {AppLayoutModule} from "./layout/app.layout.module";
 
 
 @NgModule({
@@ -26,9 +28,10 @@ import {CheckboxModule} from "primeng/checkbox";
     TestUiComponent,
     ForbiddenComponent,
     Screen1Component,
-    Screen2Component
+    Screen2Component,
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     NgxPermissionsModule.forRoot(),
@@ -37,10 +40,12 @@ import {CheckboxModule} from "primeng/checkbox";
     FormsModule,
     TableModule,
     TagModule,
-    CheckboxModule
+    CheckboxModule,
+    AppLayoutModule,
   ],
   providers: [
   ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

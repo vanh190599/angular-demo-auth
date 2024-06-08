@@ -7,6 +7,8 @@ import {NgxPermissionsGuard} from "ngx-permissions";
 import {ForbiddenComponent} from "./forbidden/forbidden.component";
 import {Screen1Component} from "./screen1/screen1.component";
 import {Screen2Component} from "./screen2/screen2.component";
+import {AppLayoutComponent} from "./layout/app.layout.component";
+
 
 const routes: Routes = [
   {
@@ -44,7 +46,14 @@ const routes: Routes = [
   {
     path: 'forbidden',
     component: ForbiddenComponent
-  }
+  },
+  {
+    path: '',
+    component: AppLayoutComponent,
+    children: [
+      // do something
+    ]
+  },
 ];
 
 @NgModule({
